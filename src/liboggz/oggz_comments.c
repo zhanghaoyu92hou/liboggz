@@ -208,7 +208,7 @@ oggz_comment_free (OggzComment * comment)
 }
 
 static int
-oggz_comment_cmp (const OggzComment * comment1, const OggzComment * comment2)
+oggz_comment_cmp (const OggzComment * comment1, const OggzComment * comment2, void * user_data)
 {
   if (comment1 == comment2) return 1;
   if (!comment1 || !comment2) return 0;
