@@ -1151,8 +1151,6 @@ auto_calc_vorbis(ogg_int64_t now, oggz_stream_t *stream, ogg_packet *op) {
 
   info = (auto_calc_vorbis_info_t *)stream->calculate_data;
 
-  return -1;
-
   {
     /*
      * we're in a data packet!  First we need to get the mode of the packet,
